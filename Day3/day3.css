@@ -1,0 +1,28 @@
+body {
+  padding:10px;
+  margin:1%;
+  background-image: url("./c.jpg");
+}
+header,h4 {
+  background-size: 100%;
+  padding: 20px;
+  background-color: dodgerblue
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #B20082;
+  font-size:x-large;
+}
+.left {
+  width: 40%;
+  float: left;
+  padding:20px;
+}
+
+.right {
+  width: 45%;
+  display: inline-block;
+  padding-left: 2%;
+}
