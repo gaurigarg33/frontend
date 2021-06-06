@@ -1,0 +1,13 @@
+body {
+  padding: 10px;
+  margin:10px;
+  background-image: url("./c.jpg");
+  border: solid;
+  border-color: purple;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: purple;
+  font-size:x-large;
+}
