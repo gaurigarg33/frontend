@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="day5.css">
+</head>
+<body>
+  <div class="contain">
+    <div class="container">
+      <div class=".inner">
+        <form name="calculator">
+                <input id="display" type="text" name="display" placeholder="0" readonly>
+                <br>
+                <input type="reset" name="reset" class="button space_left space_bet clear_button top" value="AC">
+                <input type="button" name="button" class="button space_left math space_bet clear top" value="C" onclick="calculator.display.value= calculator.display.value.slice(0,-1)">
+                <input type="button" name="button" class="button  space_bet left math top" value="+/-" onclick="calculator.display.value= -Math.abs(calculator.display.value)">
+                <input type="button" name="button" class="button  space_bet left math top extra-left" value="/" onclick="calculator.display.value+='/'">
+                <br>
+                <input type="button" name="button" class="button space_top space_left" value="7" onclick="calculator.display.value+='7'">
+                <input type="button" name="button" class="button space_top left" value="8" onclick="calculator.display.value+='8'">
+                <input type="button" name="button" class="button space_top left" value="9" onclick="calculator.display.value+='9'">
+                <input type="button" name="button" class="button space_top  left math extra-left" value="x" onclick="calculator.display.value+='*'">
+                <br>
+                <input type="button" name="button" class="button space_left space_bet" value="4" onclick="calculator.display.value+='4'">
+                <input type="button" name="button" class="button space_bet left" value="5" onclick="calculator.display.value+='5'">
+                <input type="button" name="button" class="button space_bet left" value="6" onclick="calculator.display.value+='6'">
+                <input type="button" name="button" class="button  space_bet left math extra-left" value="-" onclick="calculator.display.value+='-'">
+                <br>
+                <input type="button" name="button" class="button space_bet space_left" value="1" onclick="calculator.display.value+='1'">
+                <input type="button" name="button" class="button space_bet left" value="2" onclick="calculator.display.value+='2'">
+                <input type="button" name="button" class="button space_bet left" value="3" onclick="calculator.display.value+='3'">
+                <input type="button" name="button" class="button  space_bet left math plus extra-left" value="+" onclick="calculator.display.value+='+'">
+                <br>
+                <input type="button" name="button" class="button  space_bet math space_left" value="%" onclick="calculator.display.value+='%'">
+                <input type="button" name="button" class="button space_bet left" value="0" onclick="calculator.display.value+='0'">
+                <input type="button" name="button" class="button space_right space_bet left math" value="." onclick="calculator.display.value+='.'">
+                <input type="button" name="button" class="button space_bet math equal left" value="=" onclick="calculator.display.value= eval(calculator.display.value)">
+              </form>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
