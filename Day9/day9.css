@@ -1,0 +1,32 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+ opacity: 0.8;
+ text-align: center;
+}
+span{
+  margin-left:20px ;
+  margin-right:20px ;
+  font-size: 70px;
+  font-weight: bolder;s
+}
+
+.box {
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+td{
+  box-shadow: 0px 0px 20px rgb(59, 59, 59);
+  box-sizing: border-box;
+  background-color: red;
+  width:80px;
+  height: 80px;
+  border: 2px solid #f03949 ;
+}
+table{
+  border-collapse: collapse;
+}
+.color{
+  background-color: white;
+}
