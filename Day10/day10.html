@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="day10.css">
+      </head>
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1>Memory Game</h1>
+        </header>
+        <section class="index">
+          <div id="level" class="level">
+            <div class="level-content">
+              <h2>Select The Level</h2>
+              <button class="btn level-btn1">Level 1 ------ ** ------ 12 CARDS</button>
+              <button class="btn level-btn2">Level 2 ------ ** ------ 16 CARDS</button>
+              <button class="btn level-btn3">Level 3 ------ ** ------ 20 CARDS </button>
+              <button class="btn level-btn4">Level 4 ------ ** ------ 24 CARDS</button>
+            </div>
+          </div>
+        </section>
+        <section class="score-panel">
+          <div id="game" class="game">
+            <div class="game-content">
+          <span class="mo"><span class="moves-counter">0</span>  Moves</span>
+          <span class="timer-container">
+            <span class="timer"><i class="fa time-start"></i> Timer: 00:00</span>
+          </span>
+          <ul class="deck"></ul>
+        </div>
+      </div>
+        </section>
+        <section class="win-game">
+          <div id="cong" class="cong">
+            <div class="cong-content">
+              <span class="close">&times;</span>
+              <h2>Congratulations!</h2>
+              <p>YOU WON.</p>
+              <img class="cong-img" src="img/congo.jpg" alt="Vault boy giving the thumbs up from the game fall out">
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="day10.js"></script>
+    </body>
+</html>
