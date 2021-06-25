@@ -8,26 +8,8 @@ const level2=document.querySelector(".level-btn2");
 const level3=document.querySelector(".level-btn3");
 const level4=document.querySelector(".level-btn4");
 const movesCount = document.querySelector(".moves-counter");
-let moves = 0;
-let accur ;
+let accur, time, x, minutes = 0, moves = 0, seconds = 0, timeStart = false ;
 const timeCounter = document.querySelector(".timer");
-let time;
-let minutes = 0;
-let seconds = 0;
-let timeStart = false;
-let x;
-function shuffle(array,x) {
-  let currentIndex = x, temp, randomIndex;
-
-  while (currentIndex !== 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-      temp = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temp;
-  }
-  return array;
-}
 level1.addEventListener('click',function() {
   level.style.display = "none";
   game.style.display= "flex";
@@ -52,6 +34,18 @@ level4.addEventListener('click',function() {
   x=24
   startGame(x);
 });
+function shuffle(array,x) {
+  let currentIndex = x, temp, randomIndex;
+
+  while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temp = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temp;
+  }
+  return array;
+}
 function startGame(x) {
   const shuffledDeck = shuffle(deckCards,x);
   for (let i = 0; i < x; i++) {
@@ -60,13 +54,8 @@ function startGame(x) {
     const addImage = document.createElement("IMG");
     liTag.appendChild(addImage);
     addImage.setAttribute("src", "img/" + shuffledDeck[i]);
-    addImage.setAttribute("alt", "image of vault boy from fallout");
+    addImage.setAttribute("alt", "image of cards");
     deck.appendChild(liTag);
-  }
-}
-function removeCard() {
-  while (deck.hasChildNodes()) {
-    deck.removeChild(deck.firstChild);
   }
 }
 function timer() {
@@ -76,7 +65,7 @@ function timer() {
         minutes++;
         seconds = 0;
       }
-    timeCounter.innerHTML = "<i class='fa time-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
+    timeCounter.innerHTML = "<i class='time-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
   }, 1000);
 }
 function stopTime() {
