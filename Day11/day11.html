@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>QUIZ</title>
+        <link rel="stylesheet" href="day11.css">
+      </head>
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1>Riddle Quiz</h1>
+        </header>
+        <section class="index">
+          <div id="start" class="start">
+            <div class="start-content">
+
+              <h2 style="color: red; margin-top:30px;">Welcome To The World Of Riddles.</h2>
+              <button style="margin-top:50px; " class="btn start-btn">START</button>
+            </div>
+          </div>
+        </section>
+        <section class="score-panel">
+            <div class="game" id="game">
+                 <h3 class="question">What is the full form of html</h3>
+
+                 <div class="box">
+                 <input type="radio" name="ans" id="ans1" class="answer">
+                 <label for="ans1" id="option1"> option1</label>
+                </div>
+
+                 <br>
+
+                 <div class="box">
+                 <input type="radio" name="ans" id="ans2" class="answer">
+                 <label for="ans2" id="option2"> option2</label>
+                </div>
+
+                 <br>
+
+                 <div class="box">
+
+                 <input type="radio" name="ans" id="ans3" class="answer">
+                 <label for="ans3" id="option3"> option3</label>
+                </div>
+
+                 <br>
+
+                 <div class="box">
+
+                 <input type="radio" name="ans" id="ans4" class="answer">
+                 <label for="ans4" id="option4"> option4</label>
+                </div>
+
+                 <br>
+                 <div class="sol">
+                </div>
+
+                 <br>
+
+                 <button style="height:50px; margin-top:10px; font-size: 1em;" id="submit" class="btn submit-btn">Next Question</button>
+            </div>
+        </section>
+
+        <section class="win-game">
+          <div id="cong" class="cong">
+            <div class="cong-content">
+              <h2>QUIZ COMPLETE</h2>
+              <p>YOU FINAL SCORE.</p>
+              <button class="btn play-again-btn">Play Again</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="day11.js"></script>
+    </body>
+</html>
