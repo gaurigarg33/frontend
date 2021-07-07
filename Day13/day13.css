@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: helvetica;
+  font-size: 20px;
+  background: url("quotee.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+.container {
+  margin: 200px auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.quote-box {
+  padding: 50px 40px;
+  margin-bottom: 20px;
+}
+#quote {
+  color: white;
+  text-align: center;
+  font-family: "Germania One";
+}
+#author {
+  float: right;
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+#btn {
+  align-self: center;
+  border: 2px solid #666;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn:focus {
+  outline: none;
+}
