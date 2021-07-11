@@ -1,0 +1,23 @@
+#a{
+    font-size:3rem;
+    color:white;
+    background-color:yellowgreen;
+    padding:8px;
+    margin:10px;
+
+}
+#b{
+    font-size:3rem;
+    color:white;
+    background-color:blue;
+    padding:8px;
+    margin:10px;
+    border:2px solid yellowgreen;
+}
+#c{
+  font-size:3rem;
+  width:500px;
+  height:50px;
+  padding:8px;
+  margin:10px;
+}
