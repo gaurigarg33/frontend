@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar_day24{   
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(99, 172, 218);
+        color: whitesmoke;
+        height: 10vh;
+        font-size: x-large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        cursor: pointer;
+}
